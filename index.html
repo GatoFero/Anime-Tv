@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5afec04305.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>AnimeTV</title>
+</head>
+<body>
+    <header>
+
+      <nav class="nav-anime">
+        <section class="nav-logo">
+          <img src="./assets/logos/logoAnimeF.png" alt="">
+        </section>
+        <div class="opciones-nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#categorias">Categorías</a>
+          <a href="#estrenos">Estrenos</a>
+        </div>
+        <div class="accesos-nav">
+          <a class="premium-nav">
+            <i class="fa-solid fa-crown"></i>
+            <div class="Premium-letras">
+              <h1>Probar Gratis</h1>
+              <h2>Premium</h2>
+            </div>
+          </a>
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a><i class="fa-solid fa-bookmark"></i></a>
+          <a><i class="fa-solid fa-user"></i></a>
+        </div>
+
+
+        <div class="nav-mobile">
+          <section class="principal-mobile">
+            <i class="fa-solid fa-crown"></i>
+            <i class="fa-solid fa-user"></i>
+            <button class="open-opciones" onclick="menuMobile()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </section>
+        </div>
+      </nav>
+
+      <section class="opciones-mobile">
+        <button class="close-opciones" onclick="menuMobile()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a class="premium-nav">
+          <i class="fa-solid fa-crown"></i>
+          <div class="Premium-letras">
+            <h1>Probar Gratis</h1>
+            <h2>Premium</h2>
+          </div>
+        </a>
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#estrenos">Estrenos</a>
+        <div class="accesosMobile-nav">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bookmark"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </section>
+
+    </header>
+
+    <main id="inicio">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-indicators cuadrar">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="presentacion-item">
+                  <img class="fondo-item" src="./assets/carrusel/portadas/spy.png" alt="">
+                  <section class="elementos-item">
+                    <img src="./assets/carrusel/logos/spy.png" alt="">
+                    <h1>¡Mira el estreno!</h1>
+                    <a href="" class="presentacion-ver">
+                      <i class="fa-solid fa-play"></i>Ver Ahora
+                    </a>
+                  </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="presentacion-item">
+                  <img class="fondo-item"  src="./assets/carrusel/portadas/onepiece.png" alt="">
+                  <section class="elementos-item">
+                    <img src="./assets/carrusel/logos/onepiece.png" alt="">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab dolor, aperiam reiciendis ea iste nemo deleniti dolorem doloribus...</h2>
+                    <a href="" class="presentacion-ver">
+                      <i class="fa-solid fa-play"></i>Ver Ahora
+                    </a>
+                  </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="presentacion-item">
+                  <img class="fondo-item" src="./assets/carrusel/portadas/mushuku.png" alt="">
+                  <section class="elementos-item">
+                    <img src="./assets/carrusel/logos/mushuku.png" alt="">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab dolor, aperiam reiciendis ea iste nemo deleniti dolorem doloribus...</h2>
+                    <a href="" class="presentacion-ver">
+                      <i class="fa-solid fa-play"></i>Ver Ahora
+                    </a>
+                  </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="presentacion-item">
+                  <img class="fondo-item" src="./assets/carrusel/portadas/kaiju.png" alt="">
+                  <section class="elementos-item">
+                    <img src="./assets/carrusel/logos/kaiju.png" alt="">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab dolor, aperiam reiciendis ea iste nemo deleniti dolorem doloribus...</h2>
+                    <a href="" class="presentacion-ver">
+                      <i class="fa-solid fa-play"></i>Ver Ahora
+                    </a>
+                  </section>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="presentacion-item">
+                  <img class="fondo-item" src="./assets/carrusel/portadas/spiece.png" alt="">
+                  <section class="elementos-item">
+                    <img src="./assets/carrusel/logos/spice.png" alt="">
+                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ab dolor, aperiam reiciendis ea iste nemo deleniti dolorem doloribus...</h2>
+                    <a href="" class="presentacion-ver">
+                      <i class="fa-solid fa-play"></i>Ver Ahora
+                    </a>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <!-- Seccion de mas vistos -->
+          <div class="container-fluid text-center" style="overflow: hidden;">
+            <!-- Content here -->
+            <div class="titulo-seccion">
+              <h1>Más Vistos</h1>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/efb29ad752e647212b3e199da7748e9e.jpe" alt="">
+                      <h1>Code Geass</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Code Geass</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/1ed9e4a68607df81cb255c3430b702dc.jpe" alt="">
+                      <h1>Persona 5</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Persona 5</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/095217fdb4f228410df09b18f151be28.jpe" alt="">
+                      <h1>Spy x Family</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Spy x Family</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/7be367f5952c52bb89acfb93f4211c05.jpe" alt="">
+                      <h1>Sakugan</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Sakugan</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/dca123d2c28dd98a07b5bbd36ed8ae99.jpe" alt="">
+                      <h1>Love of Kill</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Love of Kill</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/cecc82b73e8ef376a60f095bd94c36d9.jpe" alt="">
+                      <h1>Cowboy Bebop</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Cowboy Bebop</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/c12782357e8379f455072489a3f019e4.jpe" alt="">
+                      <h1>4 Sons</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>4 Sons</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/c8ba4917e75286e06edbfff519e64daa.jpe" alt="">
+                      <h1>Eden of the East</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Eden of the East</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/b1aaad7e3725d2faae107e1054f11a84.jpe" alt="">
+                      <h1>Detective Conan</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Detective Conan</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/a358cb4fd20bbdf69211a1a12188d6eb.jpe" alt="">
+                      <h1>The Millionarie</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>The Millionarie</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/a89cfc561f6de95d35723fd665d708fb.jpe" alt="">
+                      <h1>Mob Psycho 100</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Mob Psycho 100</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/697c8b5ff2f49a97348b5507c06e1183.jpe" alt="">
+                      <h1>Death Note</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>The Yakuzas Guide</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="left: -2%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="right: -2%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Categorias de animes -->
+          <div id="categorias" class="container-fluid text-center" style="overflow: hidden;">
+            <!-- Content here -->
+            <div class="titulo-seccion">
+              <h1>Categorías</h1>
+              <h2>Romance</h2>
+            </div>
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/48b9c687382510e7ae195f61fee65c61.jpe" alt="">
+                      <h1>Kaguya - Sama</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Kaguya - Sama</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/3cdd3ac7e5d8be3bb97c9e39bc1114d4.jpe" alt="">
+                      <h1>Ijiranaide, Nagatoro</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Ijiranaide, Nagatoro</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/0ab1a205c9c541ad87cefdbe7fd23390.jpe" alt="">
+                      <h1>The 100 Girlfriends</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>The 100 Girlfriends</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/3d7dbae873e5958948f4958ff2081c8f.jpe" alt="">
+                      <h1>The Angel</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>The Angel</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/6c985c5f2bf94a05437fff8ecdd806f6.jpe" alt="">
+                      <h1>Horimiya</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Horimiya</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/7d402dc6bb4c01fe11f62832252d03fc.jpe" alt="">
+                      <h1>Tomo - Chan</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Tomo - Chan</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/78ff9a9b718349568558c7e073921276.jpe" alt="">
+                      <h1>Fuufu Ijou, Koibito</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Fuufu Ijou, Koibito</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/345cb92fe22f16486c24e3e7111d1a35.jpe" alt="">
+                      <h1>Couple of Cuckoos</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Couple of Cuckoos</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/c1ce1da34e412456b6ed4b57bce1001a.jpe" alt="">
+                      <h1>Tonikawa</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Tonikawa</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/d9a8fbeb4b5b9e2f2a0085d5d20c63df.jpe" alt="">
+                      <h1>Angel Beast</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Angel Beast</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/fda5013137bec91772e4de1205193e64.jpe" alt="">
+                      <h1>Hokkaido Gals</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Hokkaido Gals</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/romance/fdfd2e0910d6f141626a7d6f8f76ab72.jpe" alt="">
+                      <h1>Sono Bisque Doll</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Sono Bisque Doll</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev" style="left: -2%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next" style="right: -2%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-fluid text-center" style="overflow: hidden;">
+            <!-- Content here -->
+            <div class="titulo-seccion">
+              <h2>Comedia</h2>
+            </div>
+            <div id="carouselExample3" class="carousel slide">
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/0a190ad32ada80a50dd287f3a8994e23.jpe" alt="">
+                      <h1>A Sing of Affection</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>A Sing of Affection</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/3f84cdad5e39d6d35ffc2b127c0509c7.jpe" alt="">
+                      <h1>Love Villainess</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Love Villainess</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/4c261a32809b8bc6b1edd605b7dde78c.jpe" alt="">
+                      <h1>ItaKiss</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>ItaKiss</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/6e94355c0f9b0e1fa47f24f4f3a9ba62.jpe" alt="">
+                      <h1>Aharen-San</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Aharen-San</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/8b6a0f3bbad44dcfa810c0e36f7e6ad8.jpe" alt="">
+                      <h1>OddTaxi</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>OddTaxi</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/99eff982378aaf07651fe8ce2ea43235.jpe" alt="">
+                      <h1>Sound Euphonium</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Sound Euphonium</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/126dc528ec3515a591e5ddb3b2bf1fe9.jpe" alt="">
+                      <h1>Shine On!</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Shine On!</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/339cf3552968e7114d76e1b6bbe945c1.jpe" alt="">
+                      <h1>Duke and Maid</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Duke and Maid</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/0742aadf638509c7a0319e258e82149d.jpe" alt="">
+                      <h1>Alice & Zoroku</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Alice & Zoroku</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/057908db709dec0de317006c86c0363e.jpe" alt="">
+                      <h1>Buddy Daddies</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Buddy Daddies</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/93572bc2f9b6d753fa1b1f63391841ee.jpe" alt="">
+                      <h1>A Galaxy Next Door</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>A Galaxy Next Door</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/comedia/660793bd7b92db8c0fc05753caacd2b5.jpe" alt="">
+                      <h1>The Yakuzas Guide</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>The Yakuzas Guide</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev" style="left: -2%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next" style="right: -2%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="container-fluid text-center" style="overflow: hidden;">
+            <!-- Content here -->
+            <div class="titulo-seccion">
+              <h2>Acción</h2>
+            </div>
+            <div id="carouselExample4" class="carousel slide">
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/3fa31250f0604ff16ef6cb0a12dea63d.jpe" alt="">
+                      <h1>Darling in the Franxx</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Darling in the Franxx</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/6ffaa454c90d50b7cbd380d66f9dcd96.jpe" alt="">
+                      <h1>Akudama Drive</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Akudama Drive</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/8f3656389c668a4a978ae333607b8617.jpe" alt="">
+                      <h1>Moriarty</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Moriarty</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/20fc1f9c50e855bb8bbeefeab10434ff.jpe" alt="">
+                      <h1>Date a Live</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Date a Live</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/48f5e5d1b485eb5c9a33c517accd1fec.jpe" alt="">
+                      <h1>Bungo</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Bungo</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/067ba823fe77aa4f5fdc8249a6458b31.jpe" alt="">
+                      <h1>Trigun</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Trigun</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/291c6c3b60857afabe46899f848079a4.jpe" alt="">
+                      <h1>Re:Zero</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Re:Zero</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/323c82257b2f6567fabbb7bd55bfa753.jpe" alt="">
+                      <h1>Attack on Titan: Final Seson</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Attack on Titan: Final Seson</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+                <div class="carousel-item">
+                  
+                  <main class="contenedor-cards">
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/4878904e11e92d203de290c39d65061f.jpe" alt="">
+                      <h1>Wedding Rings</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Wedding Rings</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nemo a fuga vero veniam temporibus culpa repudiandae in assumenda accusantium fugit.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/9217662a508e16c1987377d026272ec3.jpe" alt="">
+                      <h1>Time Loop</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Time Loop</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet sit beatae mollitia omnis maiores assumenda quisquam consectetur rerum debitis aliquam earum.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/c1747000b39a1abd51fa79c9a69cc58c.jpe" alt="">
+                      <h1>Demon King Academy</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Demon King Academy</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse hic eum excepturi quos, reprehenderit exercitationem debitis officia dolorem harum neque veniam.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                    <section class="card-anime text-start">
+                      <img src="./assets/portadas/accion/cf20e7a1792149f9655c52c4fa7e2b18.jpe" alt="">
+                      <h1>Magus Bride</h1>
+                      <h2>Sub | Dob</h2>
+                      <aside class="detalles-card">
+                        <h1>Magus Bride</h1>
+                        <h2>Capitulos 13</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat voluptatem possimus id aperiam omnis aspernatur corrupti exercitationem cupiditate.</p>
+                        <section class="botones-detalle">
+                          <i class="fa-solid fa-play"></i>
+                          <i class="fa-solid fa-bookmark"></i>
+                          <i class="fa-solid fa-share"></i>
+                        </section>
+                      </aside>
+                    </section>
+                  </main>
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev" style="left: -2%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next" style="right: -2%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Planes Premium -->
+          <div class="container-fluid">
+            <div class="titulo-seccion">
+              <h1>Vuelvete Premiun</h1>
+              <h2>Mejora tu plan</h2>
+            </div>
+            <div class="seccion-planes">
+              <img src="./assets/logos/fondo.png" alt="">
+              <div class="planes-premiun">
+                <section class="plan basico">
+                  <header class="plan-tipo">
+                    <h1>Basico</h1>
+                  </header>
+                  <main class="plan-beneficios">
+                    <li><i class="fa-regular fa-circle-check"></i> Acceso limitado.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Visualización en calidad estándar.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Guarda tus animes favoritos.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Reproducción con anuncios.</li>
+                  </main>
+                  <div class="plan-precio">
+                      <h1 class="basico-precio">Obtenido</h1>
+                  </div>
+                </section>
+  
+                <section class="plan plus">
+                  <header class="plan-tipo">
+                    <h1>Plus</h1>
+                  </header>
+                  <main class="plan-beneficios">
+                    <li><i class="fa-regular fa-circle-check"></i> Acceso ilimitado.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Visualizacion en calidad HD.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Acceso a nuevas series.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Descuentos exclusivos en mercancía.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Acceso a contenido promocional y avances.</li>          
+                  </main>
+                  <div class="plan-precio">
+                      <h1 class="plus-precio">3$</h1>
+                  </div>
+                </section>
+  
+                <section class="plan premiun">
+                  <header class="plan-tipo">
+                    <h1>Premiun</h1>
+                  </header>
+                  <main class="plan-beneficios">
+                    <li><i class="fa-regular fa-circle-check"></i> Todos los beneficios anteriores.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Acceso exclusivo a contenido adicional.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Eventos exclusivos.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Regalos o merchandising exclusivo.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Insignia Exclusiva.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Sin anuncios.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Participación en concursos y sorteos exclusivos.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Soporte técnico prioritario.</li>
+                  </main>
+                  <div class="plan-precio">
+                      <h1 class="premiun-precio">10$</h1>
+                  </div>
+                </section>
+              </div>           
+            </div>      
+          </div>
+
+          <!-- Estrenos -->
+          <div class="titulo-seccion" id="estrenos">
+            <h1>Estrenos</h1>
+          </div>
+          <div class="container-fluid cont-estrenos">
+            <aside id="contenedorPortada" class="portada-plan"></aside>
+            <div id="contenedorResumen" class="exclusivo-presentacion"></a>
+            </div>
+          </div>
+
+          <!-- Registrate -->
+          <div class="sesion">
+            <h1>Registrate</h1>
+            <img src="./assets/logos/fondo3.png" alt="">
+            <form class="formulario-sesion">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Repetir Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword2">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check</label>
+              </div>
+              <button type="submit" class="btn btn-primary sesion-buton">Submit</button>
+            </form>
+          </div>
+
+          <!-- Acordeon de capitulos -->
+          <div class="titulo-seccion">
+            <h1>Capitulos Semanales</h1>
+          </div>
+          <div class="capitulos-semana">
+            <div class="dia">
+              <h1>Ayer</h1>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Cowboy Bebop
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/cowboy_bebop_4k_wallpaper_by_thehobbynexus_detagvm.png" alt="">
+                      <p>Capitulo 20</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Love of Kill
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/19194256-cfaa07b8deef99fb2f69eaad7a4f6abf-a42938705c5fff8aba480d08788bb052.jpg" alt="">
+                      <p>Capitulo 4</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Code Geass
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/6fef7fc95c02c9eb86885875a837645e.png" alt="">
+                      <p>Capitulo 2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dia">
+              <h1>Hoy</h1>
+              <div class="accordion accordion-flush" id="accordionFlushExample2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Eden of the East
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/wp8834025.webp" alt="">
+                      <p>Capitulo 2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Mob Psycho 100
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/1_6xDzHBpm0kUNGjAXryG__w.jpg" alt="">
+                      <p>Capitulo 22</p>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree2" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Spy x Family
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/Anime_SpyxFamily_OfficialArt_Souvenir.jpg" alt="">
+                      <p>Capitulo 12</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dia">
+              <h1>Mañana</h1>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Sakugan
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/Sakugan-Memempu-Dream-Colony.avif" alt="">
+                      <p>Capitulo 9</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Kaguya - Sama
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/ph_167578941063e284625bc56.jpg" alt="">
+                      <p>Capitulo 12</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Horimiya
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body capitulo">
+                      <img src="./assets/dias/interview_horimiya_director_thumb_kv_1682193158797_1687345930192.webp" alt="">
+                      <p>Capitulo 10</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </main>
+    <footer>
+      <img src="./assets/logos/fondo5.png" alt="">
+      <p>Derechos Reservados 2024.</p>
+      <div class="redes">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
+</body>
+</html>
